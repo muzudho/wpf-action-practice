@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfActionPractice.MainWindow"
+﻿<Window x:Class="WpfActionPractice.MainWindowView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
@@ -7,8 +7,13 @@
         xmlns:local="clr-namespace:WpfActionPractice"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid>
+
+        <!-- ボタンはこれ -->
         <Button Content="適当に置いたボタン" HorizontalAlignment="Left" Height="93" Margin="315,176,0,0" VerticalAlignment="Top" Width="134">
+
+            <!-- トリガーの中にアクションがある感じ -->
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <local:AlertAction Message="こんにちはアクション"/>
